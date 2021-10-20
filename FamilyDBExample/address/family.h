@@ -20,5 +20,6 @@ bool address_family_add_member(family_t *instance, person_t member);
 bool address_family_remove_member(family_t *instance, person_t member);
 void address_family_pp(family_t instance);
 size_t address_family_size(family_t instance);
+person_t address_family_get(family_t instance, uint8_t position);
 
 #endif /* family_h */

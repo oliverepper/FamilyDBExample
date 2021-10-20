@@ -32,3 +32,8 @@ void address_person_pp(person_t instance)
 {
     printf("My name is %s and I am %d years old.\n", instance->name, instance->age);
 }
+
+char *address_person_name(person_t instance)
+{
+    return instance->name;
+}

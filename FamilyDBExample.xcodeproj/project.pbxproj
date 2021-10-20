@@ -7,12 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A7221CFD2720B45D005C54AF /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = A7221CFC2720B45D005C54AF /* Tests.m */; };
+		A7221D012720B499005C54AF /* person.c in Sources */ = {isa = PBXBuildFile; fileRef = A7B660F627200FB8003FFEF7 /* person.c */; };
+		A7221D022720B499005C54AF /* family.c in Sources */ = {isa = PBXBuildFile; fileRef = A7B660FA272011D4003FFEF7 /* family.c */; };
+		A7221D0A2720B90D005C54AF /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = A7221D092720B90D005C54AF /* main.c */; };
+		A7221D0E2720BA91005C54AF /* person.c in Sources */ = {isa = PBXBuildFile; fileRef = A7B660F627200FB8003FFEF7 /* person.c */; };
+		A7221D0F2720BA91005C54AF /* family.c in Sources */ = {isa = PBXBuildFile; fileRef = A7B660FA272011D4003FFEF7 /* family.c */; };
 		A7B660EE27200F7A003FFEF7 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = A7B660ED27200F7A003FFEF7 /* main.c */; };
 		A7B660F727200FB8003FFEF7 /* person.c in Sources */ = {isa = PBXBuildFile; fileRef = A7B660F627200FB8003FFEF7 /* person.c */; };
 		A7B660FB272011D4003FFEF7 /* family.c in Sources */ = {isa = PBXBuildFile; fileRef = A7B660FA272011D4003FFEF7 /* family.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		A7221D052720B90D005C54AF /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 		A7B660E827200F7A003FFEF7 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -25,6 +40,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		A7221CFA2720B45D005C54AF /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7221CFC2720B45D005C54AF /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
+		A7221D072720B90D005C54AF /* Speedtest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Speedtest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7221D092720B90D005C54AF /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		A7B660EA27200F7A003FFEF7 /* FamilyDBExample */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = FamilyDBExample; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7B660ED27200F7A003FFEF7 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		A7B660F527200FB8003FFEF7 /* person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = person.h; sourceTree = "<group>"; };
@@ -35,6 +54,20 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		A7221CF72720B45D005C54AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7221D042720B90D005C54AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A7B660E727200F7A003FFEF7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -45,10 +78,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A7221CFB2720B45D005C54AF /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				A7221CFC2720B45D005C54AF /* Tests.m */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		A7221D082720B90D005C54AF /* Speedtest */ = {
+			isa = PBXGroup;
+			children = (
+				A7221D092720B90D005C54AF /* main.c */,
+			);
+			path = Speedtest;
+			sourceTree = "<group>";
+		};
 		A7B660E127200F7A003FFEF7 = {
 			isa = PBXGroup;
 			children = (
 				A7B660EC27200F7A003FFEF7 /* FamilyDBExample */,
+				A7221CFB2720B45D005C54AF /* Tests */,
+				A7221D082720B90D005C54AF /* Speedtest */,
 				A7B660EB27200F7A003FFEF7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -57,6 +108,8 @@
 			isa = PBXGroup;
 			children = (
 				A7B660EA27200F7A003FFEF7 /* FamilyDBExample */,
+				A7221CFA2720B45D005C54AF /* Tests.xctest */,
+				A7221D072720B90D005C54AF /* Speedtest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -85,6 +138,40 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		A7221CF92720B45D005C54AF /* Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A7221D002720B45D005C54AF /* Build configuration list for PBXNativeTarget "Tests" */;
+			buildPhases = (
+				A7221CF62720B45D005C54AF /* Sources */,
+				A7221CF72720B45D005C54AF /* Frameworks */,
+				A7221CF82720B45D005C54AF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Tests;
+			productName = Tests;
+			productReference = A7221CFA2720B45D005C54AF /* Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A7221D062720B90D005C54AF /* Speedtest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A7221D0B2720B90D005C54AF /* Build configuration list for PBXNativeTarget "Speedtest" */;
+			buildPhases = (
+				A7221D032720B90D005C54AF /* Sources */,
+				A7221D042720B90D005C54AF /* Frameworks */,
+				A7221D052720B90D005C54AF /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Speedtest;
+			productName = Speedtest;
+			productReference = A7221D072720B90D005C54AF /* Speedtest */;
+			productType = "com.apple.product-type.tool";
+		};
 		A7B660E927200F7A003FFEF7 /* FamilyDBExample */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = A7B660F127200F7A003FFEF7 /* Build configuration list for PBXNativeTarget "FamilyDBExample" */;
@@ -111,6 +198,12 @@
 				BuildIndependentTargetsInParallel = 1;
 				LastUpgradeCheck = 1310;
 				TargetAttributes = {
+					A7221CF92720B45D005C54AF = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					A7221D062720B90D005C54AF = {
+						CreatedOnToolsVersion = 13.1;
+					};
 					A7B660E927200F7A003FFEF7 = {
 						CreatedOnToolsVersion = 13.1;
 					};
@@ -130,11 +223,43 @@
 			projectRoot = "";
 			targets = (
 				A7B660E927200F7A003FFEF7 /* FamilyDBExample */,
+				A7221CF92720B45D005C54AF /* Tests */,
+				A7221D062720B90D005C54AF /* Speedtest */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		A7221CF82720B45D005C54AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		A7221CF62720B45D005C54AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7221D012720B499005C54AF /* person.c in Sources */,
+				A7221D022720B499005C54AF /* family.c in Sources */,
+				A7221CFD2720B45D005C54AF /* Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7221D032720B90D005C54AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7221D0E2720BA91005C54AF /* person.c in Sources */,
+				A7221D0F2720BA91005C54AF /* family.c in Sources */,
+				A7221D0A2720B90D005C54AF /* main.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A7B660E627200F7A003FFEF7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -148,6 +273,66 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		A7221CFE2720B45D005C54AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AWJ83G3EPY;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "de.oliver-epper.Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+			};
+			name = Debug;
+		};
+		A7221CFF2720B45D005C54AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AWJ83G3EPY;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "de.oliver-epper.Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+			};
+			name = Release;
+		};
+		A7221D0C2720B90D005C54AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AWJ83G3EPY;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A7221D0D2720B90D005C54AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AWJ83G3EPY;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		A7B660EF27200F7A003FFEF7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -282,6 +467,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		A7221D002720B45D005C54AF /* Build configuration list for PBXNativeTarget "Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7221CFE2720B45D005C54AF /* Debug */,
+				A7221CFF2720B45D005C54AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A7221D0B2720B90D005C54AF /* Build configuration list for PBXNativeTarget "Speedtest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7221D0C2720B90D005C54AF /* Debug */,
+				A7221D0D2720B90D005C54AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		A7B660E527200F7A003FFEF7 /* Build configuration list for PBXProject "FamilyDBExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

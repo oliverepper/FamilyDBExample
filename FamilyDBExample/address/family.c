@@ -85,3 +85,8 @@ size_t address_family_size(family_t instance)
 {
     return instance->size;
 }
+
+person_t address_family_get(family_t instance, uint8_t position)
+{
+    return instance->members[position];
+}
